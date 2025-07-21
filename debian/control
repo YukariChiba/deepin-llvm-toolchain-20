@@ -136,7 +136,6 @@ Description: C, C++ and Objective-C compiler - Documentation
  This package contains the documentation.
 
 Package: libclang1-20
-Provides: ${t64:Provides}
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -236,7 +235,6 @@ Description: High-level loop and data-locality optimizer
 # ------------- clang libraries -------------
 
 Package: libclang-cpp20
-Provides: ${t64:Provides}
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libllvm20 (= ${binary:Version})
@@ -339,7 +337,6 @@ Description: Clang examples
 # ------------- LLVM -------------
 
 Package: libllvm20
-Provides: ${t64:Provides}
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -575,7 +572,6 @@ Description: Next generation, high-performance debugger
  Project, such as the Clang expression parser and LLVM disassembler.
 
 Package: liblldb-20
-Provides: ${t64:Provides}
 Architecture: amd64 arm64 armel armhf i386 loong64 m68k ppc64el riscv64 s390x x32
 Depends: ${shlibs:Depends}, ${misc:Depends}, libllvm20 (= ${binary:Version})
 Pre-Depends: ${misc:Pre-Depends}
@@ -636,7 +632,7 @@ Description: LLVM OpenMP runtime - dev package
 Package: libomp5-20
 Architecture: amd64 arm64 armhf loong64 ppc64 ppc64el hurd-amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Provides: ${t64:Provides}, libomp-x.y
+Provides: libomp-x.y
 Conflicts: libomp-x.y
 Replaces: libomp-x.y
 Description: LLVM OpenMP runtime
@@ -680,7 +676,7 @@ Package: liboffload-20
 Multi-Arch: same
 Architecture: amd64 arm64 loong64 ppc64 ppc64el hurd-amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Provides: ${t64:Provides}, liboffload-x.y
+Provides: liboffload-x.y
 Conflicts: liboffload-x.y
 Replaces: liboffload-x.y
 Description: Offload Library
@@ -696,7 +692,6 @@ Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: clang
-Provides: ${t64:Provides}
 Description: LLVM C++ Standard library
  libc++ is another implementation of the C++ standard library.
  .
@@ -762,7 +757,6 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Provides: ${t64:Provides}
 Description: LLVM low level support for a standard C++ library
  libc++abi is another implementation of low level support for a standard C++
  library.
@@ -852,7 +846,6 @@ Section: libs
 Architecture: amd64 arm64 armhf i386 loong64 ppc64el ppc64 riscv64
 Depends: ${shlibs:Depends},
  ${misc:Depends}
-Provides: ${t64:Provides}
 Description: production-quality unwinder
  libunwind is a production-quality unwinder, with platform support for DWARF
  unwind info, SjLj, and ARM EHABI.
@@ -896,7 +889,7 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
  ${misc:Depends}
-Provides: ${t64:Provides}, libmlir-x.y
+Provides: libmlir-x.y
 Conflicts: libmlir-x.y
 Replaces: libmlir-x.y
 Description: Multi-Level Intermediate Representation library

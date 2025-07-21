@@ -1,3 +1,9 @@
+llvm-toolchain-20 (1:20.1.6-1~exp1deepin1) unstable; urgency=medium
+
+  * remove t64, do not use lld on loong64
+
+ -- Chang Yang <yangchang@deepin.org>  Mon, 21 Jul 2025 13:08:50 +0800
+
 llvm-toolchain-20 (1:20.1.6-1~exp1) experimental; urgency=medium
 
   [ Matthias Klose ]
